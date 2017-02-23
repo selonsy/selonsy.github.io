@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Blog of Wenli Zhang</title>
-        <description>Web Front-End Blog by Wenli Zhang</description>
-        <link>http://localhost:4000</link>
-        <atom:link href="http://localhost:4000/feed-cn.xml" rel="self" type="application/rss+xml" />
+        <title>Blog of Devin Shen</title>
+        <description>Web Develope Blog by Devin Shen</description>
+        <link>http://shenjl.github.io/blog</link>
+        <atom:link href="http://shenjl.github.io/blog/feed-cn.xml" rel="self" type="application/rss+xml" />
         
             
             
@@ -158,8 +158,8 @@ index 841268a..991e3f1 100644
 &lt;p&gt;Enjoy ECharts now!&lt;/p&gt;
 </description>
                 <pubDate>Wed, 24 Aug 2016 00:00:00 +0800</pubDate>
-                <link>http://localhost:4000/2016/08/24/using-echarts-with-typescript/</link>
-                <guid isPermaLink="true">http://localhost:4000/2016/08/24/using-echarts-with-typescript/</guid>
+                <link>http://shenjl.github.io/blog/2016/08/24/using-echarts-with-typescript/</link>
+                <guid isPermaLink="true">http://shenjl.github.io/blog/2016/08/24/using-echarts-with-typescript/</guid>
             </item>
             
             
@@ -275,8 +275,8 @@ index 841268a..991e3f1 100644
 &lt;p&gt;For some cases, we want to know more than a rough impression of progress bar. In this case, you may add a &lt;code class=&quot;highlighter-rouge&quot;&gt;pause&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;resume&lt;/code&gt; function for &lt;code class=&quot;highlighter-rouge&quot;&gt;heavyJob&lt;/code&gt; so as to break the elephant into pieces. And there should be a consideration over the balance between the accuracy of progress and the overall efficiency.&lt;/p&gt;
 </description>
                 <pubDate>Wed, 27 Jul 2016 00:00:00 +0800</pubDate>
-                <link>http://localhost:4000/2016/07/27/non-ui-blocking-javascript/</link>
-                <guid isPermaLink="true">http://localhost:4000/2016/07/27/non-ui-blocking-javascript/</guid>
+                <link>http://shenjl.github.io/blog/2016/07/27/non-ui-blocking-javascript/</link>
+                <guid isPermaLink="true">http://shenjl.github.io/blog/2016/07/27/non-ui-blocking-javascript/</guid>
             </item>
             
             
