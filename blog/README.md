@@ -1,0 +1,2 @@
+# Blog
+Devin's Blog.

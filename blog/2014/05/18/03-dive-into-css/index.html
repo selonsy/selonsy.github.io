@@ -1,0 +1,4324 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <script type="text/javascript">
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?dcee78e565eeaedc76defba5d096b344";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-38205696-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+        <meta name="description" content="Web Front-End Blog by Wenli Zhang" />
+        <meta name="viewport" content="width=100%, initial-scale=1" />
+
+        <link rel="shortcut icon" href="http://zhangwenli.com/blog/img//owl.ico" />
+        <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/default.min.css" />
+    </head>
+    
+    <body>
+
+        <div id="music-panel">
+    <a id="music-control" href="javascript:;" onclick="toggleMusicPanel()"></a>
+    <div id="music-content">
+        <!-- use lazy loading -->
+        <!--iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=49176408&auto=0&height=430"></iframe-->
+    </div>
+</div>
+
+
+        
+        
+        <div id="mobile-nav">
+            <a href="http://zhangwenli.com" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InNavMobile', window.location.pathname]);">Home</a><a href="http://localhost:4000" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InNavMobile', window.location.pathname]);">Blog</a>
+        </div>
+        <div class="contentDiv">
+
+
+<title>03 - Dive into CSS
+    
+        : Dive into Web Front-End Programming
+    
+ - 羡辙杂俎</title>
+
+
+
+
+<div class="rotLeft rotTop pageBack"></div>
+<div class="rotRight rotTop pageBack"></div>
+<div class="container page page-post">
+    
+
+    <div class="simpleNav">
+        <a href="http://zhangwenli.com" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InPost', window.location.pathname]);">Home</a>
+        <a href="http://localhost:4000" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InPost', window.location.pathname]);">Blog</a>
+    </div>
+
+    
+    
+    <div class="timeago" title="2014-05-18T14:28:00+08:00">2014.05.18 14:28:00</div>
+
+    
+    <div class="pageTitle">03 - Dive into CSS</div>
+
+    <div class="tagPanel">
+    <a href="http://localhost:4000/all?tag=WebDesign" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InPost', window.location.pathname]);"><div class="tag">WebDesign</div></a><a href="http://localhost:4000/all?tag=Tutorial" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InPost', window.location.pathname]);"><div class="tag">Tutorial</div></a><a href="http://localhost:4000/all?tag=CSS" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InPost', window.location.pathname]);"><div class="tag">CSS</div></a>
+    </div>
+
+    
+
+    
+        <blockquote class="seriesNote">
+
+    <h4>Series: Dive into Web Front-End Programming</h4>
+
+    
+    <ul>
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <li class="series-not-self"><a href="http://localhost:4000/2014/04/27/00-about-this-series/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
+            
+            
+            
+                00 - About this series
+            
+            
+            
+                </a>
+            
+            </li>
+        
+    
+        
+            
+                <li class="series-not-self"><a href="http://localhost:4000/2014/04/27/01-the-whole-picture/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
+            
+            
+            
+                01 - The Whole Picture
+            
+            
+            
+                </a>
+            
+            </li>
+        
+    
+        
+            
+                <li class="series-not-self"><a href="http://localhost:4000/2014/05/02/02-dive-into-html/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
+            
+            
+            
+                02 - Dive into HTML
+            
+            
+            
+                </a>
+            
+            </li>
+        
+    
+        
+    
+        
+            
+                <li class="series-self">
+            
+            
+            
+                03 - Dive into CSS
+            
+            
+            
+            </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <li class="series-not-self"><a href="http://localhost:4000/2014/07/30/04-more-about-css-position/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
+            
+            
+            
+                04 - More about CSS Position
+            
+            
+            
+                </a>
+            
+            </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </ul>
+</blockquote>
+
+    
+
+
+
+    <div id="page-view"></div>
+
+
+    
+    <p>CSS enables us to change the style of the content. It controls how the content is rendered.</p>
+
+<p>A CSS rule is made up of a <em>selector</em> and a group of <em>declarations</em>. A CSS declaration consists of a <em>property</em> (e.g., <code class="highlighter-rouge">color</code>) and a <em>value</em> (e.g., <code class="highlighter-rouge">red</code>).</p>
+
+<p>Here is an example of typical CSS rules:</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="no">red</span><span class="p">;</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ff0</span><span class="p">;</span>
+    <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">p</span> <span class="p">{</span>
+    <span class="nl">margin</span><span class="p">:</span> <span class="m">10px</span> <span class="m">0</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<h1 id="basic-properties">Basic Properties</h1>
+
+<p>This post mainly focuses on CSS positioning. But before that, I’d like to introduce some frequently used CSS propertyies. To learn CSS, you don’t have to know it property by property. Instead, you can totally get to know a new property once you meet with it. Although to be a good Web designer, you need to have a good command of coloring, in this post, we are just going to have a basic idea of it.</p>
+
+<h2 id="color">Color</h2>
+
+<p>There are several types to represent colors. You can use words like <code class="highlighter-rouge">red</code>, <code class="highlighter-rouge">green</code>, <code class="highlighter-rouge">yellow</code> and etc. for <em>color names</em>. But they’re quite limited. A full list is available at <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/color_value</a>.</p>
+
+<p>Usually, we can represent a color using the proportion values of red, green and blue. In CSS, a hex value <code class="highlighter-rouge">#f31492</code> or an RGB group value <code class="highlighter-rouge">rgb(24, 52, 200)</code> can be used to represent colors.</p>
+
+<p>For hex value <code class="highlighter-rouge">#f31492</code>, the first two digits <code class="highlighter-rouge">f3</code> are used to present the red proportion, the next two digits <code class="highlighter-rouge">14</code> are for green, the last two digits <code class="highlighter-rouge">92</code> are for blue. Since two hex digits can represent values from <code class="highlighter-rouge">00</code> to <code class="highlighter-rouge">ff</code>, each of red, green, blue components are from 0 to 255. So, <code class="highlighter-rouge">#f00910</code> is equal to <code class="highlighter-rouge">rgb(240, 9, 16)</code>.</p>
+
+<p>If the hex value is formed like <code class="highlighter-rouge">#ff7733</code>, it can be abbreviated to <code class="highlighter-rouge">#f73</code>.</p>
+
+<h3 id="color-background-color-border-color"><code class="highlighter-rouge">color</code>, <code class="highlighter-rouge">background-color</code>, <code class="highlighter-rouge">border-color</code></h3>
+
+<p><code class="highlighter-rouge">color</code> is used to set the color of text, while <code class="highlighter-rouge">background-color</code> and <code class="highlighter-rouge">border-color</code> set the color of background and border respectively.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>Hello, world!<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ff6600</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-01.png" /></p>
+
+<h2 id="width-and-height">Width and Height</h2>
+
+<p>If you don’t set the width and height of a component, it depends on the content.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div&gt;</span>xxxxx x xxxx xxxxxxxxxx xxxxxxxx xxxxxxxx xxxxxx xxxxxxxx xxx xxxxx xxxxxxxxx xxxxxxxx xxxxxxx xxxxxx xxxxxxx xxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxx xxxxxxxx xxxxxxxxx xxxxxxxxx.<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-02.png" /></p>
+
+<p>If the width is set, the height depends on the content.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ff6600</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-03.png" /></p>
+
+<p>If both width and height are set, the content may overflow.</p>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">div</span> <span class="p">{</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+    <span class="nl">height</span><span class="p">:</span> <span class="m">100px</span><span class="p">;</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="nb">rgb</span><span class="p">(</span><span class="m">255</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">0</span><span class="p">);</span>
+    <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ff6600</span><span class="p">;</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">1px</span> <span class="nb">solid</span> <span class="no">blue</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-04.png" /></p>
+
+<p>You can set the overflowed content to be hidden using <code class="highlighter-rouge">overflow: hidden;</code>, or display a scroll bar when overflow using <code class="highlighter-rouge">overflow: auto</code>. If you don’t want a horizontal scroll bar, you can set <code class="highlighter-rouge">overflow-x: hidden; overflow-y: auto;</code>.</p>
+
+<p>Besides <code class="highlighter-rouge">px</code> unit, which stands for pixel, you can also use percentage to represent width and height. <code class="highlighter-rouge">width: 80%;</code> set the width to be 80% of its parent’s. For <code class="highlighter-rouge">body</code>, the <code class="highlighter-rouge">width: 100%</code> and <code class="highlighter-rouge">height: 100%</code> are the width and height of the browser content, which is equal to <code class="highlighter-rouge">window.innerWidth</code> and <code class="highlighter-rouge">window.innerHeight</code> in JavaScript.</p>
+
+<h1 id="margin-and-padding">Margin and Padding</h1>
+
+<p>Margin is the outside distance from other elements, while padding is the inside distance from its child elements. Let’s see the following example to have a general idea.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 500px; background-color: yellow;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"padding: 50px; margin: 20px; width: 200px; background-color: red;"</span><span class="nt">&gt;</span>I'm red.<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-09.png" /></p>
+
+<blockquote>
+  <p>DIY</p>
+</blockquote>
+
+<blockquote>
+  <p>Use <em>Inspect Element</em> of Chrome or <em>Firebug</em> of Firefox to have a more deep understanding of this example.</p>
+</blockquote>
+
+<h1 id="position">Position</h1>
+
+<p>CSS position can sometimes be confusing and in this post, I’m going to talk about it in detail.</p>
+
+<h2 id="display"><code class="highlighter-rouge">display</code></h2>
+
+<p><code class="highlighter-rouge">display</code> is one of the CSS properties that determines position, whose frequently used values are <code class="highlighter-rouge">block</code>, <code class="highlighter-rouge">inline</code>, <code class="highlighter-rouge">inline-block</code> and <code class="highlighter-rouge">none</code>.</p>
+
+<p>Different elements have different default values for <code class="highlighter-rouge">display</code>, even possibly different default values in different Web browsers. For example, <code class="highlighter-rouge">display</code> of <code class="highlighter-rouge">&lt;div&gt;</code>, <code class="highlighter-rouge">&lt;p&gt;</code> is <code class="highlighter-rouge">block</code> by default, while that of <code class="highlighter-rouge">&lt;span&gt;</code>, <code class="highlighter-rouge">&lt;a&gt;</code> is <code class="highlighter-rouge">inline</code> by default. We can overwrite <code class="highlighter-rouge">display</code> using CSS as we can always do with other CSS properties.</p>
+
+<p>Next, I’m going to explain what these values mean in detail.</p>
+
+<h3 id="display-block"><code class="highlighter-rouge">display: block</code></h3>
+
+<p>Element with <code class="highlighter-rouge">display: block</code> takes the position of area of its own size and the right area of its parents. It’s quite ambiguous to say so… Let’s see it in an example.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 500px; background-color: yellow;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 200px; height: 100px; background-color: red;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 100px; height: 50px; background-color: green;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-05.png" /></p>
+
+<p>Because the default value of <code class="highlighter-rouge">display</code> of <code class="highlighter-rouge">&lt;div&gt;</code> is <code class="highlighter-rouge">block</code>, here although the total width of the red block and the green one is less than that of the yellow block, the green block is shown below the red one, rather than at the right side of the red one.</p>
+
+<blockquote>
+  <h4 id="diy">DIY</h4>
+</blockquote>
+
+<blockquote>
+  <p>Use <em>Inspect Element</em> of Chrome or <em>Firebug</em> of Firefox to see the <code class="highlighter-rouge">width</code>, <code class="highlighter-rouge">margin</code> of these elements and the highlighted area when hovering an element in <em>Inspect Window</em>.</p>
+</blockquote>
+
+<h3 id="display-inline-block"><code class="highlighter-rouge">display: inline-block</code></h3>
+
+<p>We set the <code class="highlighter-rouge">display</code> property to be <code class="highlighter-rouge">inline-block</code> to the previous example and now the green block is shown right to the red one, since their total width are less than their parent’s width.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 500px; background-color: yellow;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline-block; width: 200px; height: 100px; background-color: red;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline-block; width: 100px; height: 50px; background-color: green;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-06.png" /></p>
+
+<p>Please pay attention to how the green block is aligned with the red one.</p>
+
+<blockquote>
+<p>If you are wondering about the gap between the elements, see <a href="http://stackoverflow.com/questions/1833734/display-inline-block-extra-margin" target="_blank">StackOverflow: display: inline-block extra margin</a>.</p>
+
+<p>The gap can be easily removed by writing the red and green block in the same line with no space in-between.</p>
+
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 500px; background-color: yellow;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline-block; width: 200px; height: 100px; background-color: red;"</span><span class="nt">&gt;&lt;/div&gt;&lt;div</span> <span class="na">style=</span><span class="s">"display: inline-block; width: 100px; height: 50px; background-color: green;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+</blockquote>
+
+<h3 id="display-inline"><code class="highlighter-rouge">display: inline</code></h3>
+
+<p>If we set <code class="highlighter-rouge">display</code> property to be <code class="highlighter-rouge">inline</code> to the previous example, we’ll see they are <em>not displayed</em> at all.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 500px; background-color: yellow;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline; width: 200px; height: 100px; background-color: red;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline; width: 100px; height: 50px; background-color: green;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-07.png" /></p>
+
+<p>In fact, we can’t say <em>they are not displayed</em>. Let’s see another example.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 500px; background-color: yellow;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline; width: 200px; height: 100px; background-color: red;"</span><span class="nt">&gt;</span>I'm red.<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"display: inline; width: 100px; height: 50px; background-color: green;"</span><span class="nt">&gt;</span>I'm green.<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-08.png" /></p>
+
+<p>You see in this example that they are displayed when there’s text in them. You can see now that when <code class="highlighter-rouge">display</code> is set to be <code class="highlighter-rouge">inline</code>, the element is rendered, but we can’t control other properties like <code class="highlighter-rouge">width</code>, <code class="highlighter-rouge">height</code>, <code class="highlighter-rouge">margin</code>, <code class="highlighter-rouge">padding</code> and etc. any more. You may find it a little confusing, but this is very useful in some cases. For example, we can use <code class="highlighter-rouge">&lt;span style="color: red"&gt;&lt;/span&gt;</code> to highlight some content without changing the text’s position.</p>
+
+<h3 id="display-none"><code class="highlighter-rouge">display: none</code></h3>
+
+<p>As we can guess from this code, elements with <code class="highlighter-rouge">display: none</code> will not be displayed. Why bother writing elements that are not displayed? You may find it extremely helpful when you want to toggle some elements to display and hide.</p>
+
+<h2 id="float"><code class="highlighter-rouge">float</code></h2>
+
+<p>You may probably be familiar with setting an image to float to left or right in <em>Office Word</em>. In CSS, you can also float elements to left or right of its parent. But careful! It can be somehow surprising to you.</p>
+
+<p>Basically, you can set <code class="highlighter-rouge">float</code> of the element to be <code class="highlighter-rouge">left</code>, <code class="highlighter-rouge">right</code> or <code class="highlighter-rouge">none</code> if not to float.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 500px; background-color: yellow;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float: left; width: 200px; height: 100px; background-color: red;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float: right; width: 100px; height: 50px; background-color: green;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-10.png" /></p>
+
+<p>Why isn’t yellow displayed?</p>
+
+<p>This is because when an element is set to be <code class="highlighter-rouge">float: left</code> or <code class="highlighter-rouge">float: right</code>, it’s height will be no longer counted when computing its parent’s height. So you may need to do as following. See <a href="http://css-tricks.com/almanac/properties/c/clear/" target="_blank">CSS Tricks</a> for more information.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"width: 500px; background-color: yellow;"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float: left; width: 200px; height: 100px; background-color: red;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"float: right; width: 100px; height: 50px; background-color: green;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"clear: both"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-11.png" /></p>
+
+<h2 id="display-inline-block-vs-float-left"><code class="highlighter-rouge">display: inline-block</code> vs. <code class="highlighter-rouge">float: left</code></h2>
+
+<p>You may find <code class="highlighter-rouge">display: inline-block</code> and <code class="highlighter-rouge">float: left</code> are quite similar in some ways. So how should we choose between them?</p>
+
+<p>The first thing you need to note is that <code class="highlighter-rouge">display: inline-block</code> align at top vertically, while <code class="highlighter-rouge">float: left</code> align at bottom.</p>
+
+<p><code class="highlighter-rouge">display: inline-block</code>:</p>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-06.png" /></p>
+
+<p><code class="highlighter-rouge">float: left</code>:</p>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-12.png" /></p>
+
+<p>There’re posts explained this topic in detail. If you are interested, you can refer to <a href="http://www.ternstyle.us/blog/float-vs-inline-block" target="_blank">Float vs. Inline-Block</a> and <a href="http://www.onderhond.com/blog/inline-block-vs-float" target="_blank">INLINE-BLOCK VS FLOAT / thinking horizontal</a>.</p>
+
+<h1 id="conclusion">Conclusion</h1>
+
+<p>We talked about some useful CSS properties in this post and most importantly, how to control the position of elements. By the end of this post, you should have learnt how to implement Web designs into code. But practice is extremely important in learning HTML and CSS. You need to be patient and learn bit by bit.</p>
+
+<p>You are welcomed to tell me if you find this series helpful and about how you would like me to improve it to help you learn better.</p>
+
+<h1 id="homework">Homework</h1>
+
+<p>The inspiring news is that you can make Web sites now!</p>
+
+<p>To build a Web site, you should first design what to show and how to display it. Since we haven’t talked about how to design yet, in this homework, you are given a design image and your task is to implement the design (including all description in the image).</p>
+
+<p><img src="http://zhangwenli.com/blog/img/loading.gif" data-src="http://localhost:4000/img/post/2014-05-18-dive-into-css-13.png" /></p>
+
+<p>I suggest you put your code on GitHub and share a link as comment to this post, so that we can discuss more about it.</p>
+
+<h2 id="suggested-answer">Suggested Answer</h2>
+
+<p>Here we give a possible solution. You should ask yourself why this is different from your implementation and ask me if you have any wonder. :smiley: You can use <a href="http://jsfiddle.net/" target="_blank">jsFiddle</a> to share your code.</p>
+
+<p>A better way to check this is to <a href="http://localhost:4000/demo/2014-05-18-03-dive-into-css-01.html" target="_blank">run the demo</a> and use <em>Inspect Element</em> for information.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+        <span class="nt">&lt;style </span><span class="na">type=</span><span class="s">"text/css"</span><span class="nt">&gt;</span>
+            <span class="o">*</span> <span class="p">{</span>
+                <span class="c">/* Don't use default padding and margin.
+                 * Check: http://css-tricks.com/margin-0-padding-0-no-longer-cool/
+                 */</span>
+                <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+                <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+                
+                <span class="nl">box-sizing</span><span class="p">:</span> <span class="n">border-box</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nt">html</span><span class="o">,</span> <span class="nt">body</span> <span class="p">{</span>
+                <span class="c">/* Usually used for one-screen page.
+                 * height: 100%; means to set the height to be 100% of its parent's.
+                 * Only then, can #left's height: 100% be equal to full window height.
+                 * Otherwise, #left's height: 100% will be 0.
+                 */</span>
+                <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+                <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+                
+                <span class="nl">font-family</span><span class="p">:</span> <span class="n">Arial</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nt">p</span> <span class="p">{</span>
+                <span class="nl">font-size</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+                <span class="nl">margin</span><span class="p">:</span> <span class="m">5px</span> <span class="m">0</span><span class="p">;</span> <span class="c">/* top and bottom are 5px while left and right are 0. */</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#left</span> <span class="p">{</span>
+                <span class="nl">background-color</span><span class="p">:</span> <span class="m">#f00</span><span class="p">;</span>
+                <span class="nl">width</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+                <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+                <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+                
+                <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+                
+                <span class="c">/* For #l-bottom to relative to #left, #left should be set to relative
+                 * and #l-bottom to absolute. Otherwise, #left will be relative to html.
+                 */</span>
+                <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#l-bottom</span> <span class="p">{</span>
+                <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+                <span class="nl">bottom</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+                <span class="nl">right</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+                
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#circle</span> <span class="p">{</span>
+                <span class="nl">background-color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+                <span class="nl">width</span><span class="p">:</span> <span class="m">60px</span><span class="p">;</span>
+                <span class="nl">height</span><span class="p">:</span> <span class="m">60px</span><span class="p">;</span>
+                <span class="nl">border-radius</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+                <span class="nl">float</span><span class="p">:</span> <span class="nb">right</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#right</span> <span class="p">{</span>
+                <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ff0</span><span class="p">;</span>
+                <span class="nl">height</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span>
+                <span class="nl">margin-left</span><span class="p">:</span> <span class="m">200px</span><span class="p">;</span>
+                <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span> <span class="m">50px</span> <span class="m">20px</span> <span class="m">20px</span><span class="p">;</span> <span class="c">/* top right bottom left */</span>
+                <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#r-top</span> <span class="p">{</span>
+                <span class="nl">background-color</span><span class="p">:</span> <span class="m">#0f0</span><span class="p">;</span>
+                <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+                <span class="nl">margin-bottom</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#title</span> <span class="p">{</span>
+                <span class="nl">font-size</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+                <span class="nl">color</span><span class="p">:</span> <span class="m">#f00</span><span class="p">;</span>
+                <span class="nl">text-align</span><span class="p">:</span> <span class="nb">center</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nc">.center</span> <span class="p">{</span>
+                <span class="nl">background-color</span><span class="p">:</span> <span class="m">#0ff</span><span class="p">;</span>
+                <span class="nl">width</span><span class="p">:</span> <span class="m">30%</span><span class="p">;</span> <span class="c">/* width 30% each, width margins of 5%. */</span>
+                <span class="nl">margin-left</span><span class="p">:</span> <span class="m">0%</span><span class="p">;</span>
+                <span class="nl">height</span><span class="p">:</span> <span class="m">160px</span><span class="p">;</span>
+                <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+                <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nc">.center</span><span class="o">+</span><span class="nc">.center</span> <span class="p">{</span>
+                <span class="c">/* + selects next element in the same level, which is the second
+                 * and the third elements in this case.
+                 */</span>
+                <span class="nl">margin-left</span><span class="p">:</span> <span class="m">5%</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#r-bottom</span> <span class="p">{</span>
+                <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+                <span class="nl">bottom</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+                <span class="c">/* Note how we set position instead of setting a width */</span>
+                <span class="nl">left</span><span class="p">:</span> <span class="m">20px</span><span class="p">;</span>
+                <span class="nl">right</span><span class="p">:</span> <span class="m">50px</span><span class="p">;</span>
+                
+            <span class="p">}</span>
+            
+            <span class="nc">.r-b</span> <span class="p">{</span>
+                <span class="nl">padding</span><span class="p">:</span> <span class="m">5px</span><span class="p">;</span>
+                <span class="nl">margin</span><span class="p">:</span> <span class="m">5px</span> <span class="m">0</span><span class="p">;</span>
+                <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span>
+                <span class="nl">height</span><span class="p">:</span> <span class="m">30px</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#r-b1</span> <span class="p">{</span>
+                <span class="nl">background-color</span><span class="p">:</span> <span class="m">#0000ff</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+            <span class="nf">#r-b2</span> <span class="p">{</span>
+                <span class="nl">background-color</span><span class="p">:</span> <span class="m">#ff00ff</span><span class="p">;</span>
+            <span class="p">}</span>
+            
+        <span class="nt">&lt;/style&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+    
+    <span class="nt">&lt;body&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"left"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>#f00<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;</span>width: 200px<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"l-bottom"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>radius: 65px<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;p&gt;</span>margin: 20px<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"circle"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        
+        <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"right"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"r-top"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>#0f0, margin: right: 50px, other: 20px<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"title"</span><span class="nt">&gt;</span>Title<span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;p&gt;</span>Title: center vertically and horizontally<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"r-center"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"center"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>color: #0ff<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;p&gt;</span>height: 160px<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"center"</span><span class="nt">&gt;&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"center"</span><span class="nt">&gt;&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;p&gt;</span>#ff0, width: window width - 200px<span class="nt">&lt;/p&gt;</span>
+            
+            <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"r-bottom"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;p&gt;</span>The next two are aligned at bottom, height: 60px<span class="nt">&lt;/p&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"r-b1"</span> <span class="na">class=</span><span class="s">"r-b"</span><span class="nt">&gt;</span>
+                    #0000ff
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"r-b2"</span> <span class="na">class=</span><span class="s">"r-b"</span><span class="nt">&gt;</span>
+                    #0000ff
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre></figure>
+
+
+    <div class="clear"></div>
+    
+
+    
+        <blockquote class="seriesNote">
+
+    <h4>Series: Dive into Web Front-End Programming</h4>
+
+    
+    <ul>
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <li class="series-not-self"><a href="http://localhost:4000/2014/04/27/00-about-this-series/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
+            
+            
+            
+                00 - About this series
+            
+            
+            
+                </a>
+            
+            </li>
+        
+    
+        
+            
+                <li class="series-not-self"><a href="http://localhost:4000/2014/04/27/01-the-whole-picture/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
+            
+            
+            
+                01 - The Whole Picture
+            
+            
+            
+                </a>
+            
+            </li>
+        
+    
+        
+            
+                <li class="series-not-self"><a href="http://localhost:4000/2014/05/02/02-dive-into-html/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
+            
+            
+            
+                02 - Dive into HTML
+            
+            
+            
+                </a>
+            
+            </li>
+        
+    
+        
+    
+        
+            
+                <li class="series-self">
+            
+            
+            
+                03 - Dive into CSS
+            
+            
+            
+            </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <li class="series-not-self"><a href="http://localhost:4000/2014/07/30/04-more-about-css-position/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InSeries', window.location.pathname]);">
+            
+            
+            
+                04 - More about CSS Position
+            
+            
+            
+                </a>
+            
+            </li>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    </ul>
+</blockquote>
+
+    
+
+    
+    
+    
+    <hr />
+    
+    <p>微信公众号“羡辙部落格”（xianzheblog）提供本站优质非技术类博文推送。</p>
+    <p class="no-indent"><a href="http://localhost:4000/tip/" onclick="_gaq.push(['_trackEvent', 'ToTip', 'InPost', window.location.pathname]);">觉得博文很赞？来打赏一下我吧！——送羡辙一本书，让她写出更棒的作品！:heart_eyes: </a></p>
+    
+    <div class="social-share">
+        <a class="social-share-element social-twitter" href="https://twitter.com/intent/tweet?text=03 - Dive into CSS&url=http://goo.gl/5pYBni&via=OviliaZhang&hashtags=,WebDesign,Tutorial,CSS" target="_blank" title="Share this post on Twitter" onclick="_gaq.push(['_trackEvent', 'Share', 'Twitter', window.location.pathname]);"></a>
+        <a class="social-share-element social-facebook" href="https://www.facebook.com/sharer/sharer.php?t=03 - Dive into CSS&u=http://goo.gl/5pYBni" target="_blank" title="Share this post on Facebook" onclick="_gaq.push(['_trackEvent', 'Share', 'Facebook', window.location.pathname]);"></a>
+        <a class="social-share-element social-google" href="https://plus.google.com/share?url=http://localhost:4000/2014/05/18/03-dive-into-css/" target="_blank" title="Share this post on Google Plus" onclick="_gaq.push(['_trackEvent', 'Share', 'GPlus', window.location.pathname]);"></a>
+        <a class="social-share-element social-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&title=03 - Dive into CSS&url=http://goo.gl/5pYBni&source=http%3a%2f%2fzhangwenli.com" target="_blank" title="Share this post on LinkedIn" onclick="_gaq.push(['_trackEvent', 'Share', 'LinkedIn', window.location.pathname]);"></a>
+        <a class="social-share-element social-digg" href="http://digg.com/submit?url=http://localhost:4000/2014/05/18/03-dive-into-css/&title=03 - Dive into CSS" target="_blank" title="Share this post on Digg" onclick="_gaq.push(['_trackEvent', 'Share', 'Digg', window.location.pathname]);"></a>
+        <a class="social-share-element social-reddit" href="http://reddit.com/submit?url=http://localhost:4000/2014/05/18/03-dive-into-css/&title=03 - Dive into CSS" target="_blank" title="Share this post on Reddit" onclick="_gaq.push(['_trackEvent', 'Share', 'Reddit', window.location.pathname]);"></a>
+        <a class="social-share-element social-stumble" href="http://www.stumbleupon.com/submit?url=http://localhost:4000/2014/05/18/03-dive-into-css/&title=03 - Dive into CSS" target="_blank" title="Share this post on StumbleUpon" onclick="_gaq.push(['_trackEvent', 'Share', 'StumbleUpon', window.location.pathname]);"></a>
+        <a class="social-share-element social-weibo" href="http://v.t.sina.com.cn/share/share.php?title=来看看+%40羡辙+的博文吧：03 - Dive into CSS&url=http://goo.gl/5pYBni" target="_blank" title="Share this post on Sina Weibo" onclick="_gaq.push(['_trackEvent', 'Share', 'Weibo', window.location.pathname]);"></a>
+        <a class="social-share-element social-douban" href="http://shuo.douban.com/!service/share?href=http://localhost:4000/2014/05/18/03-dive-into-css/&name=03 - Dive into CSS" target="_blank" title="Share this post on Dounban" onclick="_gaq.push(['_trackEvent', 'Share', 'Douban', window.location.pathname]);"></a>
+    </div>
+
+    <blockquote class="relatedPosts">
+        
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                        
+                        <h4>Similar Posts</h4>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="http://localhost:4000/2014/11/13/introduction-to-three-js/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRelated', window.location.pathname]);">
+                            
+                            
+                            
+                                免费啦：《Three.js 入门指南》
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                        
+                        <li class="relatedPost">
+                            <a href="http://localhost:4000/2014/08/31/display-language-title-of-syntax-highlighting/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRelated', window.location.pathname]);">
+                            
+                            
+                            
+                                Display Language Title of Syntax Highlighting
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                        
+                        <li class="relatedPost">
+                            <a href="http://localhost:4000/2014/08/16/in-page-anchors-when-mouse-moved-on/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRelated', window.location.pathname]);">
+                            
+                            
+                            
+                                How to refer to a specific section in your blog? In-page Anchors When Mouse Moved On
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                        
+                        <li class="relatedPost">
+                            <a href="http://localhost:4000/2014/08/15/new-color-scheme-for-my-blog/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRelated', window.location.pathname]);">
+                            
+                            
+                            
+                                New Color Scheme for My Blog
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                        
+                        <li class="relatedPost">
+                            <a href="http://localhost:4000/2014/08/11/how-i-made-biangua/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRelated', window.location.pathname]);">
+                            
+                            
+                            
+                                变卦：CSS / JavaScript 《易经》64卦酷炫实现
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+            
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+            
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+                
+                
+                    
+                
+                    
+                
+                    
+                
+                
+            
+        
+        
+            </ul>
+        
+
+        <h4>最近发表</h4>
+        <ul>
+        
+            <li class="relatedPost">
+                <a href="http://localhost:4000/2017/01/31/reviewing-playing-pygmalion/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', window.location.pathname]);">
+                
+                
+                
+                    爱你，还是爱自己：《皮格马利翁效应》读后感
+                
+                </a>
+            </li>
+        
+            <li class="relatedPost">
+                <a href="http://localhost:4000/2017/01/03/reading-report/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', window.location.pathname]);">
+                
+                
+                
+                    2016 年读书小结
+                
+                </a>
+            </li>
+        
+            <li class="relatedPost">
+                <a href="http://localhost:4000/2016/12/31/goodbye-2016/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', window.location.pathname]);">
+                
+                
+                
+                    2016 年度小结
+                
+                </a>
+            </li>
+        
+            <li class="relatedPost">
+                <a href="http://localhost:4000/2016/12/19/reviewing-the-neurotic-personality-of-our-time/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', window.location.pathname]);">
+                
+                
+                
+                    来，我们一起发神经吧！：《我们时代的神经症人格》读后感
+                
+                </a>
+            </li>
+        
+            <li class="relatedPost">
+                <a href="http://localhost:4000/2016/12/03/reviewing-rhetoric/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', window.location.pathname]);">
+                
+                
+                
+                    言辞的边界：《修辞认识》读后感
+                
+                </a>
+            </li>
+        
+        </ul>
+        <a class="button" href="http://localhost:4000/all" onclick="_gaq.push(['_trackEvent', 'ToAllPost', 'InPost', window.location.pathname]);">View All Posts</a></p>
+    </blockquote>
+
+
+
+    <div class="about-author">
+    <div class="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="http://localhost:4000/img/cc.png" />
+        </a>
+        <div><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Every blog post in this site</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://zhangwenli.com" property="cc:attributionName" rel="cc:attributionURL">Wenli Zhang</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">CC 3.0 License</a>, based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://github.com/ovilia/blog" rel="dct:source">Github</a>. You can see the source code of this blog site at <a href="https://github.com/Ovilia/blog/tree/gh-pages" target="_blank">github.com/Ovilia/blog</a>.</div>
+    </div>
+    <div class="follow-me">
+        <div class="follow-me-txt">Follow <strong>Wenli Zhang</strong> at</div>
+        <a class="social-share-element social-twitter" href="https://twitter.com/OviliaZhang" target="_blank" title="Follow me on Twitter" onclick="_gaq.push(['_trackEvent', 'Follow', 'Twitter', window.location.pathname]);"></a>
+<a class="social-share-element social-google" href="https://plus.google.com/u/0/112802684720065263732?rel=author" target="_blank" title="Follow me on Google Plus" onclick="_gaq.push(['_trackEvent', 'Follow', 'GPlus', window.location.pathname]);"></a>
+<a class="social-share-element social-github" href="https://github.com/Ovilia" target="_blank" title="Follow me on GitHub" onclick="_gaq.push(['_trackEvent', 'Follow', 'GitHub', window.location.pathname]);"></a>
+<a class="social-share-element social-so" href="http://stackoverflow.com/users/760314/ovilia" target="_blank" title="Follow me on StackOverflow" onclick="_gaq.push(['_trackEvent', 'Follow', 'StackOverflow', window.location.pathname]);"></a>
+<a class="social-share-element social-linkedin" href="http://www.linkedin.com/profile/view?id=148742016" target="_blank" title="Follow me on LinkedIn" onclick="_gaq.push(['_trackEvent', 'Follow', 'LinkedIn', window.location.pathname]);"></a>
+<a class="social-share-element social-dribbble" href="https://dribbble.com/wenli" target="_blank" title="Follow me on Dribbble" onclick="_gaq.push(['_trackEvent', 'Follow', 'Dribbble', window.location.pathname]);"></a>
+<a class="social-share-element social-weibo" href="http://weibo.com/plainjane" target="_blank" title="Follow me on Sina Weibo" onclick="_gaq.push(['_trackEvent', 'Follow', 'Weibo', window.location.pathname]);"></a>
+<a class="social-share-element social-douban" href="http://www.douban.com/people/ovilia1024/" target="_blank" title="Follow me on Douban" onclick="_gaq.push(['_trackEvent', 'Follow', 'Douban', window.location.pathname]);"></a>
+
+    </div>
+    <div style="clear: both"></div>
+</div>
+
+
+    
+<h1>Comments</h1>
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    setTimeout(function() {
+        var disqus_shortname = 'wenli';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    }, 10000);
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+<div class="rotLeft rotBottom pageBack"></div>
+<div class="rotRight rotBottom pageBack"></div>
+
+            <div id="footer-nav">
+                | <a href="#">Top</a> | 
+                <a href="http://localhost:4000">Blog</a> | 
+                <a href="http://zhangwenli.com/#ovilia-home">About Me</a> |
+                <a href="mailto:me@zhangwenli.com" target="_blank">Email</a> |
+                <a href="http://localhost:4000/feed.xml">RSS</a> | 
+                <a href="http://localhost:4000/meta">More</a> |
+            </div>
+            
+            <div id="footer-follow">
+                <a class="footer-follow-element footer-follow-twitter" href="https://twitter.com/OviliaZhang" target="_blank" title="Follow me on Twitter" onclick="_gaq.push(['_trackEvent', 'Follow', 'Twitter', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-google" href="https://plus.google.com/u/0/112802684720065263732?rel=author" target="_blank" title="Follow me on Google Plus" onclick="_gaq.push(['_trackEvent', 'Follow', 'GPlus', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-github" href="https://github.com/Ovilia" target="_blank" title="Follow me on GitHub" onclick="_gaq.push(['_trackEvent', 'Follow', 'GitHub', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-so" href="http://stackoverflow.com/users/760314/ovilia" target="_blank" title="Follow me on StackOverflow" onclick="_gaq.push(['_trackEvent', 'Follow', 'StackOverflow', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-linkedin" href="http://www.linkedin.com/profile/view?id=148742016" target="_blank" title="Follow me on LinkedIn" onclick="_gaq.push(['_trackEvent', 'Follow', 'LinkedIn', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-dribbble" href="https://dribbble.com/wenli" target="_blank" title="Follow me on Dribbble" onclick="_gaq.push(['_trackEvent', 'Follow', 'Dribbble', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-weibo" href="http://weibo.com/plainjane" target="_blank" title="Follow me on Sina Weibo" onclick="_gaq.push(['_trackEvent', 'Follow', 'Weibo', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-douban" href="http://www.douban.com/people/ovilia1024/" target="_blank" title="Follow me on Douban" onclick="_gaq.push(['_trackEvent', 'Follow', 'Douban', 'Footer']);"></a>
+            </div>
+        </div>
+        
+        <div id="footerDiv">
+            <div id="footerImg"></div>
+            <div id="footerCnt">
+                <div id="footer">
+                </div>
+            </div>
+        </div>
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+            
+        <script type="text/javascript" src="http://localhost:4000/js/lazyLoad.js"></script>
+        <script type="text/javascript" src="http://localhost:4000/js/common.min.js"></script>
+    </body>
+</html>
+

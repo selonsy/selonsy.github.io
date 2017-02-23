@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Blog of Wenli Zhang</title>
+        <description>Web Front-End Blog by Wenli Zhang</description>
+        <link>http://localhost:4000</link>
+        <atom:link href="http://localhost:4000/feed-cn.xml" rel="self" type="application/rss+xml" />
+        
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            <item>
+                <title>Using ECharts with TypeScript</title>
+                <description>&lt;blockquote&gt;
+  &lt;p&gt;This post introduces how to set up TypeScript environment with ECharts.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;First, we need to install &lt;a href=&quot;https://github.com/typings/typings&quot;&gt;typings&lt;/a&gt;, which is a definition manager for TypeScript.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install typings --global
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And then, install ECharts with &lt;code class=&quot;highlighter-rouge&quot;&gt;typings&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;typings install &lt;span class=&quot;nv&quot;&gt;echarts&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;github:DefinitelyTyped/DefinitelyTyped/echarts/echarts.d.ts#3305eb6f74a2de17d208dfaaa20d69cfb912f871 --save --global
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In this stage, ECharts interface has been defined. Finally, we need to install ECharts with &lt;code class=&quot;highlighter-rouge&quot;&gt;npm&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install echarts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now, &lt;code class=&quot;highlighter-rouge&quot;&gt;echarts&lt;/code&gt; can be accessed in your TypeScript file.&lt;/p&gt;
+
+&lt;div class=&quot;language-ts highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'@angular/core'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'echarts'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+
+&lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;templateUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'build/pages/page1/page1.html'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Page3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;constructor&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;echarts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// works here&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id=&quot;explanation&quot;&gt;Explanation&lt;/h1&gt;
+
+&lt;p&gt;ECharts TypeScript definition (non-official) can be found at &lt;a href=&quot;https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/echarts/echarts.d.ts&quot;&gt;DefinitelyTyped/echarts&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;3305eb6f74a2de17d208dfaaa20d69cfb912f871&lt;/code&gt; is the commit hash code, which can be replaced by the lasted one. This hash code is optional. Without it, &lt;code class=&quot;highlighter-rouge&quot;&gt;typings&lt;/code&gt; will give the error message as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;typings WARN badlocation “github:DefinitelyTyped/DefinitelyTyped/echarts/echarts.d.ts” is mutable and may change, consider specifying a commit hash&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--save&lt;/code&gt; changes settings in &lt;code class=&quot;highlighter-rouge&quot;&gt;typings.json&lt;/code&gt;, in pretty much the similar way as &lt;code class=&quot;highlighter-rouge&quot;&gt;npm install ... --save&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;--global&lt;/code&gt; tells TypeScript that the package to install, in our case, ECharts, should be accessed with &lt;code class=&quot;highlighter-rouge&quot;&gt;window.xxx&lt;/code&gt;. So, if you install a global package without this tag, you will probably get:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;typings ERR! message Attempted to compile “echarts” as an external module, but it looks like a global module. You’ll need to enable the global option to continue.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;After installation, we can use &lt;code class=&quot;highlighter-rouge&quot;&gt;git status&lt;/code&gt; to see what’s installed.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git status
+Changes not staged &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;commit:
+  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git add &amp;lt;file&amp;gt;...&quot;&lt;/span&gt; to update what will be committed&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git checkout -- &amp;lt;file&amp;gt;...&quot;&lt;/span&gt; to discard changes &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;working directory&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+    modified:   typings.json
+    modified:   typings/index.d.ts
+
+Untracked files:
+  &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git add &amp;lt;file&amp;gt;...&quot;&lt;/span&gt; to include &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;what will be committed&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+    typings/globals/echarts/
+
+no changes added to commit &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;use &lt;span class=&quot;s2&quot;&gt;&quot;git add&quot;&lt;/span&gt; and/or &lt;span class=&quot;s2&quot;&gt;&quot;git commit -a&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
+
+&lt;span class=&quot;gp&quot;&gt;$ &lt;/span&gt;git diff
+diff --git a/betterfly/typings.json b/betterfly/typings.json
+index c44aff9..73add38 100644
+--- a/betterfly/typings.json
++++ b/betterfly/typings.json
+@@ -2,6 +2,7 @@
+   &lt;span class=&quot;s2&quot;&gt;&quot;dependencies&quot;&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;,
+   &lt;span class=&quot;s2&quot;&gt;&quot;devDependencies&quot;&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;{}&lt;/span&gt;,
+   &lt;span class=&quot;s2&quot;&gt;&quot;globalDependencies&quot;&lt;/span&gt;: &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
++    &lt;span class=&quot;s2&quot;&gt;&quot;echarts&quot;&lt;/span&gt;: &lt;span class=&quot;s2&quot;&gt;&quot;github:DefinitelyTyped/DefinitelyTyped/echarts/echarts.d.ts#3305eb6f74a2de17d208dfaaa20d69cfb912f871&quot;&lt;/span&gt;,
+     &lt;span class=&quot;s2&quot;&gt;&quot;es6-shim&quot;&lt;/span&gt;: &lt;span class=&quot;s2&quot;&gt;&quot;registry:dt/es6-shim#0.31.2+20160602141504&quot;&lt;/span&gt;
+   &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+diff --git a/betterfly/typings/index.d.ts b/betterfly/typings/index.d.ts
+index 841268a..991e3f1 100644
+--- a/betterfly/typings/index.d.ts
++++ b/betterfly/typings/index.d.ts
+@@ -1 +1,2 @@
++/// &amp;lt;reference &lt;span class=&quot;nv&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;globals/echarts/index.d.ts&quot;&lt;/span&gt; /&amp;gt;
+ /// &amp;lt;reference &lt;span class=&quot;nv&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;globals/es6-shim/index.d.ts&quot;&lt;/span&gt; /&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;In brief, this tells TypeScript the interface of ECharts when compiling TypeScript into JavaScript.&lt;/p&gt;
+
+&lt;p&gt;Enjoy ECharts now!&lt;/p&gt;
+</description>
+                <pubDate>Wed, 24 Aug 2016 00:00:00 +0800</pubDate>
+                <link>http://localhost:4000/2016/08/24/using-echarts-with-typescript/</link>
+                <guid isPermaLink="true">http://localhost:4000/2016/08/24/using-echarts-with-typescript/</guid>
+            </item>
+            
+            
+        
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            <item>
+                <title>Non UI-Blocking JavaScript</title>
+                <description>&lt;p&gt;JavaScript often behaves like a multi-thread language with it’s event-based nature.&lt;/p&gt;
+
+&lt;p&gt;But it’s not.&lt;/p&gt;
+
+&lt;p&gt;John Resig, author of &lt;em&gt;Secrets of JavaScript Ninja&lt;/em&gt;, explained &lt;a href=&quot;http://ejohn.org/blog/how-javascript-timers-work/&quot;&gt;how timers work in JavaScript&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Of course, you may use &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers&quot;&gt;Web Works&lt;/a&gt; to do the labor. But it’s &lt;a href=&quot;http://caniuse.com/#search=worker&quot;&gt;support situation&lt;/a&gt; is quite a drawback.&lt;/p&gt;
+
+&lt;p&gt;In this post, I’m talking about how to prevent blocking UI when doing some heavy work in JavaScript.&lt;/p&gt;
+
+&lt;h1 id=&quot;a-naïve-version&quot;&gt;A Naïve Version&lt;/h1&gt;
+
+&lt;p&gt;We have some job that cannot be paused, called &lt;code class=&quot;highlighter-rouge&quot;&gt;doHeavyJob&lt;/code&gt; in this case. During the job, however, we want to know how many loops have be run. So we update the content of a log &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div&amp;gt;&lt;/code&gt; in each loop, after a turn of &lt;code class=&quot;highlighter-rouge&quot;&gt;doHeavyJob&lt;/code&gt; is done.&lt;/p&gt;
+
+&lt;p&gt;This is what may probably come to our mind by intuition.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;log&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/div&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;logPanel&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'log'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;txt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;logPanel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;innerHTML&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;txt&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;', '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;txt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;doHeavyJob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// update UI in each loop&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;doHeavyJob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10000000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;Math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;If you open console, you should find log information is printed with each loop of &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;, but DOM is not updated until all 100 loops are finished.&lt;/p&gt;
+
+&lt;p&gt;Since JavaScript is single-thread, UI shares the same thread with logic. So how should we tell the logic to stop some time for UI to update?&lt;/p&gt;
+
+&lt;h1 id=&quot;an-attempt-with-settimeout&quot;&gt;An Attempt with &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout&lt;/code&gt;&lt;/h1&gt;
+
+&lt;p&gt;With &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout(func, 0)&lt;/code&gt;, we can tell JavaScript to execute a function immediately once it’s free from previous work.&lt;/p&gt;
+
+&lt;p&gt;Guess how this may work?&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;doHeavyJob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Hopefully, you won’t get too surprised to see the &lt;code class=&quot;highlighter-rouge&quot;&gt;(function (i) { ... })(i)&lt;/code&gt; part. It’s a &lt;a href=&quot;http://benalman.com/news/2010/11/immediately-invoked-function-expression/&quot;&gt;Immediately-Invoked Function Expression (IIFE)&lt;/a&gt; to make sure &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt; remains expected after the &lt;code class=&quot;highlighter-rouge&quot;&gt;for&lt;/code&gt; loop ends.&lt;/p&gt;
+
+&lt;p&gt;Anyway, this attempt expects &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout&lt;/code&gt; to &lt;em&gt;create a new thread&lt;/em&gt; to update DOM, and keeps &lt;code class=&quot;highlighter-rouge&quot;&gt;doHeavyJob&lt;/code&gt; running alongside.&lt;/p&gt;
+
+&lt;p&gt;But as we talked above, &lt;strong&gt;there won’t be a new thread after all&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;What happens here is that, &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout&lt;/code&gt; is called in each loop, and &lt;code class=&quot;highlighter-rouge&quot;&gt;function() { log(i); }&lt;/code&gt; is pushed into a queue to be executed once it’s free.&lt;/p&gt;
+
+&lt;p&gt;And when will it be free?&lt;/p&gt;
+
+&lt;p&gt;The answer is, after 100 loops of &lt;code class=&quot;highlighter-rouge&quot;&gt;doHeavyJob&lt;/code&gt;. So, DOM is updated only after that.&lt;/p&gt;
+
+&lt;h1 id=&quot;another-attempt-with-settimeout&quot;&gt;Another Attempt with &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout&lt;/code&gt;&lt;/h1&gt;
+
+&lt;p&gt;This time, we put &lt;code class=&quot;highlighter-rouge&quot;&gt;doHeavyJob&lt;/code&gt; into another &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout&lt;/code&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-js&quot; data-lang=&quot;js&quot;&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;doHeavyJob&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  
+    &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;setTimeout&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;})(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;It works in a way that a group of &lt;code class=&quot;highlighter-rouge&quot;&gt;i&lt;/code&gt;’s are printed at the same time after interval. This is because the &lt;code class=&quot;highlighter-rouge&quot;&gt;setTimeout&lt;/code&gt; of &lt;code class=&quot;highlighter-rouge&quot;&gt;doHeavyJob&lt;/code&gt; gives chances for others to execute, which includes DOM updating.&lt;/p&gt;
+
+&lt;h1 id=&quot;more-aggressively&quot;&gt;More Aggressively?&lt;/h1&gt;
+
+&lt;p&gt;For some cases, we want to know more than a rough impression of progress bar. In this case, you may add a &lt;code class=&quot;highlighter-rouge&quot;&gt;pause&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;resume&lt;/code&gt; function for &lt;code class=&quot;highlighter-rouge&quot;&gt;heavyJob&lt;/code&gt; so as to break the elephant into pieces. And there should be a consideration over the balance between the accuracy of progress and the overall efficiency.&lt;/p&gt;
+</description>
+                <pubDate>Wed, 27 Jul 2016 00:00:00 +0800</pubDate>
+                <link>http://localhost:4000/2016/07/27/non-ui-blocking-javascript/</link>
+                <guid isPermaLink="true">http://localhost:4000/2016/07/27/non-ui-blocking-javascript/</guid>
+            </item>
+            
+            
+        
+    </channel>
+</rss>
+

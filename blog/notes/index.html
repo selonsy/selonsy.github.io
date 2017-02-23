@@ -1,0 +1,486 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta charset="utf-8" />
+
+        <script type="text/javascript">
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "//hm.baidu.com/hm.js?dcee78e565eeaedc76defba5d096b344";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-38205696-1']);
+            _gaq.push(['_trackPageview']);
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+
+        <meta name="description" content="Web Front-End Blog by Wenli Zhang" />
+        <meta name="viewport" content="width=100%, initial-scale=1" />
+
+        <link rel="shortcut icon" href="http://zhangwenli.com/blog/img//owl.ico" />
+        <link rel="stylesheet" type="text/css" href="http://localhost:4000/css/default.min.css" />
+    </head>
+    
+    <body>
+
+        <div id="music-panel">
+    <a id="music-control" href="javascript:;" onclick="toggleMusicPanel()"></a>
+    <div id="music-content">
+        <!-- use lazy loading -->
+        <!--iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=49176408&auto=0&height=430"></iframe-->
+    </div>
+</div>
+
+
+        
+        
+        <div id="mobile-nav">
+            <a href="http://zhangwenli.com" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InNavMobile', window.location.pathname]);">Home</a><a href="http://localhost:4000" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InNavMobile', window.location.pathname]);">Blog</a>
+        </div>
+        <div class="contentDiv">
+
+
+<title>Notes of Wenli Zhang 静观己心，厚积薄发 - Wenli Zhang</title>
+
+<div class="rotLeft rotTop pageBack"></div>
+<div class="rotRight rotTop pageBack"></div>
+<div class="container page">
+    <div class="simpleNav">
+        <a href="http://zhangwenli.com/#ovilia-home" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InNav', window.location.pathname]);">Home</a>
+        <a href="http://localhost:4000" class="pageDiv" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InNav', window.location.pathname]);">Blog</a>
+    </div>
+
+    <h2 class="subtitle">Notes of Wenli Zhang</h2>
+    <div class="pageTitle">静观己心，厚积薄发</div>
+    
+    
+    
+    <div class="center">
+    <a class="button" href="http://localhost:4000" onclick="_gaq.push(['_trackEvent', 'ToBlog', 'InNav', window.location.pathname]);">Blog</a>
+    <!--<a class="button" href="http://zhangwenli.com/cv" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToCv', 'InNav', window.location.pathname]);">CV</a>-->
+    <!-- <a class="button" href="http://zhangwenli.com/#ovilia-home" onclick="_gaq.push(['_trackEvent', 'ToHome', 'InNav', window.location.pathname]);">About Me</a> -->
+    <!--a class="button" href="http://zhangwenli.com/#projects" onclick="_gaq.push(['_trackEvent', 'ToProject', 'InNav', window.location.pathname]);">Projects</a-->
+    <a class="button" href="mailto:me@zhangwenli.com" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToEmail', 'InNav', window.location.pathname]);">Email Me</a>
+    <a class="button" href="http://localhost:4000/meta" target="_blank" onclick="_gaq.push(['_trackEvent', 'ToSiteMap', 'InNav', window.location.pathname]);">Site Map</a>
+</div>
+
+<p>I'm <em>Ovilia</em> and this blog is concerned about <em>Web Front-End</em>, my book reviews and other interesting topics. Please feel free to <a href="#comments">leave a comment</a> or contact me by <a href="mailto:me@zhangwenli.com?subject=Interested+In+Your+Blog+Posts" target="_blank">email</a> if you have any question.</p>
+
+<div class="about-author">
+    <div class="license">
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="http://localhost:4000/img/cc.png" />
+        </a>
+        <div><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Every blog post in this site</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://zhangwenli.com" property="cc:attributionName" rel="cc:attributionURL">Wenli Zhang</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">CC 3.0 License</a>, based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://github.com/ovilia/blog" rel="dct:source">Github</a>. You can see the source code of this blog site at <a href="https://github.com/Ovilia/blog/tree/gh-pages" target="_blank">github.com/Ovilia/blog</a>.</div>
+    </div>
+    <div class="follow-me">
+        <div class="follow-me-txt">Follow <strong>Wenli Zhang</strong> at</div>
+        <a class="social-share-element social-twitter" href="https://twitter.com/OviliaZhang" target="_blank" title="Follow me on Twitter" onclick="_gaq.push(['_trackEvent', 'Follow', 'Twitter', window.location.pathname]);"></a>
+<a class="social-share-element social-google" href="https://plus.google.com/u/0/112802684720065263732?rel=author" target="_blank" title="Follow me on Google Plus" onclick="_gaq.push(['_trackEvent', 'Follow', 'GPlus', window.location.pathname]);"></a>
+<a class="social-share-element social-github" href="https://github.com/Ovilia" target="_blank" title="Follow me on GitHub" onclick="_gaq.push(['_trackEvent', 'Follow', 'GitHub', window.location.pathname]);"></a>
+<a class="social-share-element social-so" href="http://stackoverflow.com/users/760314/ovilia" target="_blank" title="Follow me on StackOverflow" onclick="_gaq.push(['_trackEvent', 'Follow', 'StackOverflow', window.location.pathname]);"></a>
+<a class="social-share-element social-linkedin" href="http://www.linkedin.com/profile/view?id=148742016" target="_blank" title="Follow me on LinkedIn" onclick="_gaq.push(['_trackEvent', 'Follow', 'LinkedIn', window.location.pathname]);"></a>
+<a class="social-share-element social-dribbble" href="https://dribbble.com/wenli" target="_blank" title="Follow me on Dribbble" onclick="_gaq.push(['_trackEvent', 'Follow', 'Dribbble', window.location.pathname]);"></a>
+<a class="social-share-element social-weibo" href="http://weibo.com/plainjane" target="_blank" title="Follow me on Sina Weibo" onclick="_gaq.push(['_trackEvent', 'Follow', 'Weibo', window.location.pathname]);"></a>
+<a class="social-share-element social-douban" href="http://www.douban.com/people/ovilia1024/" target="_blank" title="Follow me on Douban" onclick="_gaq.push(['_trackEvent', 'Follow', 'Douban', window.location.pathname]);"></a>
+
+    </div>
+    <div style="clear: both"></div>
+</div>
+
+
+<p class="center"><a class="button" href="http://localhost:4000/tip" onclick="_gaq.push(['_trackEvent', 'ToTip', 'InAboutMe', window.location.pathname]);">送羡辙一本书，让她写出更棒的作品！</a></p>
+
+
+<h2>What are notes?</h2>
+<p>Unlike <a href="http://localhost:4000">blog posts</a>, notes are more frequently updated knowledge.</p>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="post-block">
+        
+        
+        <div class="timeago" title="2015-07-27T15:52:45+08:00">2015.07.27 15:52:45</div>
+        
+        <h2><a href="http://localhost:4000/notes/note/2015/07/26/notes-on-ecmascript-2015-language-specification/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', 'thPost']);">Notes on ECMAScript 2015 Language Specification</a></h2>
+
+        <div class="tagPanel">
+        
+            <a href="http://localhost:4000/all?tag=JavaScript" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', 'thPost']);"><div class="tag">JavaScript</div></a>
+        
+        </div>
+
+        <p>This is the note taken when reading <a href="http://www.ecma-international.org/ecma-262/6.0/index.html" target="_blank">ECMA-262 edition 6</a>.</p>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="post-block">
+        
+        
+        <div class="timeago" title="2015-08-06T09:20:42+08:00">2015.08.06 09:20:42</div>
+        
+        <h2><a href="http://localhost:4000/notes/note/2015/06/09/bug-list/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', 'thPost']);">我所犯过的错误们 惩毖录</a></h2>
+
+        <div class="tagPanel">
+        
+            <a href="http://localhost:4000/all?tag=中文" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', 'thPost']);"><div class="tag">中文</div></a>
+        
+            <a href="http://localhost:4000/all?tag=总结" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', 'thPost']);"><div class="tag">总结</div></a>
+        
+        </div>
+
+        <p>我记性很差。我总是忘记犯过的错误，然后再犯。一而再也就算了，但我不想再而三。所以我写下这篇笔记，一则警戒犯过的错误，二则为再遇到同样的问题提提供帮助，三则日后看到曾经犯过的愚蠢错误也值得一笑。大多数错误的原因是比较简单的，否则将单独作为博客来写。</p>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <div class="post-block">
+        
+        
+        <div class="timeago" title="2014-10-30T23:21:58+08:00">2014.10.30 23:21:58</div>
+        
+        <h2><a href="http://localhost:4000/notes/note/2014/10/18/my-believes/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', 'thPost']);">书里的人生信条</a></h2>
+
+        <div class="tagPanel">
+        
+            <a href="http://localhost:4000/all?tag=中文" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', 'thPost']);"><div class="tag">中文</div></a>
+        
+            <a href="http://localhost:4000/all?tag=阅读" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', 'thPost']);"><div class="tag">阅读</div></a>
+        
+        </div>
+
+        <p>我所赞同、欣赏、践行的那些哲言摘录。</p>
+
+    </div>
+    
+
+    
+    <div class="post-block">
+        
+        
+        <div class="timeago" title="2014-10-15T20:44:37+08:00">2014.10.15 20:44:37</div>
+        
+        <h2><a href="http://localhost:4000/notes/note/2014/10/15/jquery/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', 'thPost']);">Frequently Used Commands of jQuery</a></h2>
+
+        <div class="tagPanel">
+        
+            <a href="http://localhost:4000/all?tag=jQuery" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', 'thPost']);"><div class="tag">jQuery</div></a>
+        
+            <a href="http://localhost:4000/all?tag=JavaScript" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', 'thPost']);"><div class="tag">JavaScript</div></a>
+        
+        </div>
+
+        <p>A list of frequently used jQuery functions.</p>
+
+    </div>
+    
+
+    
+    <div class="post-block">
+        
+        
+        <div class="timeago" title="2015-04-15T10:42:34+08:00">2015.04.15 10:42:34</div>
+        
+        <h2><a href="http://localhost:4000/notes/note/2014/10/11/css/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', 'thPost']);">Frequently Used Commands of CSS</a></h2>
+
+        <div class="tagPanel">
+        
+        </div>
+
+        <p>A list of frequently used CSS selectors and attributes</p>
+
+    </div>
+    
+
+    
+    <div class="post-block">
+        
+        
+        <div class="timeago" title="2016-12-17T13:53:37+08:00">2016.12.17 13:53:37</div>
+        
+        <h2><a href="http://localhost:4000/notes/note/2014/10/09/git/" onclick="_gaq.push(['_trackEvent', 'ToPost', 'InRecent', 'thPost']);">Frequently Used Commands of git</a></h2>
+
+        <div class="tagPanel">
+        
+            <a href="http://localhost:4000/all?tag=git" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', 'thPost']);"><div class="tag">git</div></a>
+        
+            <a href="http://localhost:4000/all?tag=shell" onclick="_gaq.push(['_trackEvent', 'ToTag', 'InRecent', 'thPost']);"><div class="tag">shell</div></a>
+        
+        </div>
+
+        <p>This post is about the git commands that I find hard to remember.</p>
+
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+    
+
+    
+    
+<h1>Comments</h1>
+
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    setTimeout(function() {
+        var disqus_shortname = 'wenli';
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    }, 10000);
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+    
+
+</div>
+<div class="rotLeft rotBottom pageBack"></div>
+<div class="rotRight rotBottom pageBack"></div>
+
+            <div id="footer-nav">
+                | <a href="#">Top</a> | 
+                <a href="http://localhost:4000">Blog</a> | 
+                <a href="http://zhangwenli.com/#ovilia-home">About Me</a> |
+                <a href="mailto:me@zhangwenli.com" target="_blank">Email</a> |
+                <a href="http://localhost:4000/feed.xml">RSS</a> | 
+                <a href="http://localhost:4000/meta">More</a> |
+            </div>
+            
+            <div id="footer-follow">
+                <a class="footer-follow-element footer-follow-twitter" href="https://twitter.com/OviliaZhang" target="_blank" title="Follow me on Twitter" onclick="_gaq.push(['_trackEvent', 'Follow', 'Twitter', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-google" href="https://plus.google.com/u/0/112802684720065263732?rel=author" target="_blank" title="Follow me on Google Plus" onclick="_gaq.push(['_trackEvent', 'Follow', 'GPlus', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-github" href="https://github.com/Ovilia" target="_blank" title="Follow me on GitHub" onclick="_gaq.push(['_trackEvent', 'Follow', 'GitHub', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-so" href="http://stackoverflow.com/users/760314/ovilia" target="_blank" title="Follow me on StackOverflow" onclick="_gaq.push(['_trackEvent', 'Follow', 'StackOverflow', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-linkedin" href="http://www.linkedin.com/profile/view?id=148742016" target="_blank" title="Follow me on LinkedIn" onclick="_gaq.push(['_trackEvent', 'Follow', 'LinkedIn', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-dribbble" href="https://dribbble.com/wenli" target="_blank" title="Follow me on Dribbble" onclick="_gaq.push(['_trackEvent', 'Follow', 'Dribbble', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-weibo" href="http://weibo.com/plainjane" target="_blank" title="Follow me on Sina Weibo" onclick="_gaq.push(['_trackEvent', 'Follow', 'Weibo', 'Footer']);"></a>
+                <a class="footer-follow-element footer-follow-douban" href="http://www.douban.com/people/ovilia1024/" target="_blank" title="Follow me on Douban" onclick="_gaq.push(['_trackEvent', 'Follow', 'Douban', 'Footer']);"></a>
+            </div>
+        </div>
+        
+        <div id="footerDiv">
+            <div id="footerImg"></div>
+            <div id="footerCnt">
+                <div id="footer">
+                </div>
+            </div>
+        </div>
+
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+            
+        <script type="text/javascript" src="http://localhost:4000/js/lazyLoad.js"></script>
+        <script type="text/javascript" src="http://localhost:4000/js/common.min.js"></script>
+    </body>
+</html>
+
