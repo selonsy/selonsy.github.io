@@ -1,0 +1,245 @@
+<html lang="en">
+<head>
+    <title>Selonsy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=100%, initial-scale=1" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="shortcut icon" href="../blog/img/owl.ico" />     
+</head>
+<body oncontextmenu='return false' ondragstart='return false'>
+    <div id="music-panel">
+        <a id="music-control" href="javascript:;" target="_blank"></a>
+        <div id="music-content">
+            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=453269037&auto=0&height=430"></iframe>
+        </div>
+    </div>
+    <div id="wrapper">        
+        <div class="skinBg" style="background-image: url('img/65.jpg');"></div>
+        <header id="header">
+            <div class="weather fl">
+                <span class="cityW">
+                    <span id="p_location"></span>
+                    <span>
+			<img id="img_weather" src="" class="img_weather">
+			<!-- <span class="weatherIcon"></span>-->
+                        <span id="p_temperature"></span>
+                    </span>
+                </span>
+                <span class="sp">|</span>
+                <span class="pollution">
+		  <span>PM2.5：</span><span id="p_pm25"></span>
+		  <!--<span class="polutionLevel">良</span>-->
+                </span>
+               <!-- <div class="cityWeather">
+
+	       </div>-->
+            </div>
+        </header>
+        <div class="content tc">
+            <p class="logo"><img width="270" height="129" src="img/logo_white.png" alt="logo" /></p>
+            <div class="searchBox">
+                <form action="">
+                    <input type="text" class="searchIpt f14" name="wd" maxlength="100" />
+                    <input type="button" class="btn cp searchBTN" for="google" id="btnSearchG" value="谷歌一下" />
+                    <input type="button" class="btn cp searchBTN" for="baidu" id="btnSearchB" value="百度一下" />
+                </form>
+            </div>
+            <div class="mainContents oh">
+                <div class="menusWrapper fl">
+                    <a class="active" href="javascript:;">导航</a>
+                    <a href="javascript:;">新闻</a>
+                    <a href="javascript:;">音乐</a>
+                    <a href="javascript:;">游戏</a>
+                </div>
+                <div class="ctnerWrapper">
+                    <div class="ctnerBox">
+                        <div id="cbox-1" class="cbox tl dn">
+                            <div class="ctnerTab pr tc">
+                                <a href="#" class="on">常用类</a>
+                                <a href="#">工作类</a>
+                                <a href="#">开发类</a>
+                                <a href="#">工具类</a>
+                                <a href="#">娱乐类</a>
+                            </div>
+                            <div class="Navs rtNavs dn pt15 db">
+                                <div class="navTitle fl">常用类导航</div>
+                                <div class="navArea oh">
+                                    <div class="navContent">
+                                        <a href="http://www.baidu.com/" target="_blank" title="百度">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>百度</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="navContent">
+                                        <a href="http://exam.duoyi.com/qladmin/login.html" target="_blank" title="题库Offical">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>题库Offical</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="navContent">
+                                        <a href="http://www.cnblogs.com/" target="_blank" title="博客园">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>博客园</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="navContent">
+                                        <a href="http://www.imooc.com/" target="_blank" title="慕课网">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>慕课网</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="navContent">
+                                        <a href="https://oj.leetcode.com/" target="_blank" title="LeetCode">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>LeetCode</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="navContent">
+                                        <a href="http://www.zhihu.com/" target="_blank" title="知乎">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>知乎</span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Navs rtNavs dn pt15">
+                                <div class="navTitle fl">工作类导航</div>
+                                <div class="navArea oh">
+                                    <div class="navContent">
+                                        <a href="http://exam.duoyi.com/qladmin/login.html" target="_blank" title="题库Offical">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>题库Offical</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="navContent">
+                                        <a href="http://testql.duoyi.com/qladmin/login.html" target="_blank" title="题库Test">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>题库Test</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="navContent">
+                                        <a href="http://m.hr.duoyi.com" target="_blank" title="校招系统">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>校招系统</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="navContent">
+                                        <a href="http://hr.duoyi.com" target="_blank" title="多益招聘">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>多益招聘</span></div>
+                                        </a>
+                                    </div>
+                                    <div class="navContent">
+                                        <a href="http://xz.duoyi.com" target="_blank" title="多益校招">
+                                            <img width="115" height="70" src="img/ie.png" alt="" />
+                                            <div><span>多益校招</span></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Navs rtNavs dn pt15">
+                                <div class="navTitle fl">开发类导航</div>
+                                <div class="navArea oh">
+
+
+                                </div>
+                            </div>
+                            <div class="Navs rtNavs dn pt15">
+                                <div class="navTitle fl">工具类导航</div>
+                                <div class="navArea oh">
+
+
+                                </div>
+                            </div>
+                            <div class="Navs rtNavs dn pt15">
+                                <div class="navTitle fl">娱乐类导航</div>
+                                <div class="navArea oh">
+                                    <a href="http://www.taobao.com" target="_blank" title="淘宝网"><img width="115" height="70" src="img/101.png" alt="" /></a>
+                                    <a href="http://www.jd.com" target="_blank" title="京东商城"><img width="115" height="70" src="img/102.png" alt="" /></a>
+                                    <a href="http://www.vip.com" target="_blank" title="唯品会"><img width="115" height="70" src="img/115.png" alt="" /></a>
+                                    <a href="http://www.ctrip.com" target="_blank" title="携程"><img width="115" height="70" src="img/116.png" alt="" /></a>
+                                    <a href="http://www.youku.com" target="_blank" title="优酷"><img width="115" height="70" src="img/106.png" alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cbox-2" class="cbox tl dn">
+                            <div class="newsBox oh">
+                                <div class="sliderBox fl">
+                                    <div class="slider">
+                                        <a href="#" target="_blank" class="picLink active">
+                                            <img width="425" height="260" src="img/news2.jpg" alt="" />
+                                            <span href="#" target="_blank" class="picTitle">颤抖吧骚年</span>
+                                        </a>
+                                    </div>
+                                    <div class="smallPics">
+                                        <a class="active"><img width="68" height="40" src="img/news2.jpg" alt="" /></a>
+                                    </div>
+                                </div>
+                                <div class="topic">
+                                    <div class="topicTop">
+                                        <span class="titleWords titleT on"><a href="javascript:;">搜索风云榜</a></span>
+                                        <span class="titleTopic titleT"><a href="javascript:;">热门话题</a></span>
+                                        <a class="changeWords" href="javascript:;">换一换</a>
+                                    </div>
+                                    <div class="topicList">
+                                        <div class="wBox topicB dn">
+                                            <ul>
+                                                <li><a target="_blank" href="#">风云11111</a></li>
+                                                <li><a target="_blank" href="#">风云22222</a></li>
+                                                <li><a target="_blank" href="#">风云33333</a></li>
+                                                <li><a target="_blank" href="#">风云44444</a></li>
+                                                <li><a target="_blank" href="#">风云55555</a></li>
+                                                <li><a target="_blank" href="#">风云66666</a></li>
+                                                <li><a target="_blank" href="#">风云77777</a></li>
+                                                <li><a target="_blank" href="#">风云88888</a></li>
+                                                <li><a target="_blank" href="#">风云99999</a></li>
+                                                <li><a target="_blank" href="#">风云11111</a></li>
+                                                <li><a target="_blank" href="#">风云22222</a></li>
+                                                <li><a target="_blank" href="#">风云33333</a></li>
+                                                <li><a target="_blank" href="#">风云44444</a></li>
+                                                <li><a target="_blank" href="#">风云55555</a></li>
+                                                <li><a target="_blank" href="#">风云66666</a></li>
+                                                <li><a target="_blank" href="#">风云77777</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tBox topicB dn">
+                                            <ul>
+                                                <li><a target="_blank" href="#">话题11111</a></li>
+                                                <li><a target="_blank" href="#">话题22222</a></li>
+                                                <li><a target="_blank" href="#">话题33333</a></li>
+                                                <li><a target="_blank" href="#">话题44444</a></li>
+                                                <li><a target="_blank" href="#">话题55555</a></li>
+                                                <li><a target="_blank" href="#">话题66666</a></li>
+                                                <li><a target="_blank" href="#">话题77777</a></li>
+                                                <li><a target="_blank" href="#">话题88888</a></li>
+                                                <li><a target="_blank" href="#">话题99999</a></li>
+                                                <li><a target="_blank" href="#">话题11111</a></li>
+                                                <li><a target="_blank" href="#">话题22222</a></li>
+                                                <li><a target="_blank" href="#">话题33333</a></li>
+                                                <li><a target="_blank" href="#">话题44444</a></li>
+                                                <li><a target="_blank" href="#">话题55555</a></li>
+                                                <li><a target="_blank" href="#">话题66666</a></li>
+                                                <li><a target="_blank" href="#">话题77777</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cbox-3" class="cbox tl dn">
+                            <p class="pt15 tc f14">不要急骚年，在开发中了~~</p>
+                        </div>
+                        <div id="cbox-4" class="cbox tl dn">
+                            <p class="pt15 tc f14">说了不要急，还点~~</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="footer">©2016 selonsy 使用产品前必读 蜀ICP备16003894号-1</footer>
+    <script src="../lib/jquery.js"></script>    
+    <script src="js/searchcenter.js"></script>
+</body>
+</html>
+
