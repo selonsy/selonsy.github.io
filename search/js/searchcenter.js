@@ -15,7 +15,7 @@ function initParam() {
         {type:'common', href: 'https://www.google.com.hk/', title: '谷歌', show: 'Google' },
         {type:'common', href: 'http://www.cnblogs.com/', title: '博客园', show: 'CnBlog' },
         {type:'common', href: 'http://stackoverflow.com/', title: '栈溢出', show: 'StackOverflow' },
-        {type:'common', href: 'https://oj.leetcode.com/', title: 'LeetCode', show: 'LeetCode' },
+        {type:'common', href: 'http://github.com/shenjl', title: 'GitHub', show: 'GitHub' },
 
         {type:'common', href: 'http://www.w3cschool.cn/', title: 'w3c', show: 'W3cSchool' },
         {type:'common', href: 'http://www.runoob.com/', title: '菜鸟', show: 'Ruoob' },
@@ -29,6 +29,7 @@ function initParam() {
         {type:'common', href: 'http://www.douban.com/', title: '豆瓣', show: 'DouBan' },
         {type:'common', href: 'http://tv.sohu.com/', title: '搜狐视频', show: 'Sohu' },
 
+        {type:'common', href: 'https://oj.leetcode.com/', title: 'LeetCode', show: 'LeetCode' },
 
         //work
         {type:'work', href: 'http://zpm.hr.duoyi.com/', title: '校招后台', show: '正-校招后台' },
