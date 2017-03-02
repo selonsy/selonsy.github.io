@@ -63,7 +63,7 @@ function initParam() {
             var new_nav_list = nav_list.filter(filterBytype(nav_type[i]));
             for (var j = 0; j < new_nav_list.length; j++) {
                 var item = new_nav_list[j];
-                new_html += html.format(item.href, item.title, item.show);
+                new_html += html.format(item.href,item.show, item.title);
             }
             obj.html(new_html);
         }
