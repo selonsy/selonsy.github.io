@@ -99,12 +99,15 @@ a:focus{outline: none;}
 #cbox-1{display:block;}
 .navTitle{color: #999999;height: 81px;line-height: 16px;padding: 4px 7px 0 20px;text-align: left;width: 20px;}
 .navArea{margin-left:50px;}
-.navArea a{width:114px;height:69px;float:left;display:inline-block;border:2px solid rgba(248, 248, 248, 0.7);margin:0 8px 12px 0;background:#f8f8f8;background:linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;background:-moz-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;background:-webkit-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;background:-o-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;}
+/*.navArea a{width:114px;height:69px;float:left;display:inline-block;border:2px solid rgba(248, 248, 248, 0.7);margin:0 8px 12px 0;background:#f8f8f8;background:linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;background:-moz-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;background:-webkit-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;background:-o-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;}
+.navArea a:hover{border:2px solid #42A0FE;}
+*/
+.navArea a{width:135px;height:45px;float:left;display:inline-block;border:2px solid rgba(248, 248, 248, 0.7);margin:0 8px 12px 0;background:#f8f8f8;background:linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;background:-moz-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;background:-webkit-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;background:-o-linear-gradient(rgba(248, 248, 248, 0.7) 0px, rgba(248, 248, 248, 0.7) 100%) repeat;}
 .navArea a:hover{border:2px solid #42A0FE;}
 .navContent{}
 .navContent a{text-decoration: none;}
-.navContent img{float: left;margin-top: 28px;margin-left: 5px }
-.navContent span{color: black;line-height: 70px;float: left ;margin-left: 5px;font-size: 15px}
+.navContent img{float: left;margin-top: 15px;margin-left: 5px }
+.navContent span{color: black;line-height: 45px;float: left ;margin-left: 5px;font-size: 15px}
 .sliderBox{width:425px;}
 .picLink{display:none;width: 425px;height:260px;position: relative;}
 .picLink.active{display: block;}
