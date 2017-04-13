@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <title>Selonsy</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=100%, initial-scale=1" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="shortcut icon" href="../blog/img/owl.ico" />     
+    <style>
+	.navArea a{width:130px}
+	.footer{
+	    bottom:10px;
+	    width:100%;
+	    text-align:center;
+	    position:fixed;
+	}
+	.navContent span{
+	    color:#0f833d
+	}
+	.btn{color:darkcyan}
+	.ctnerTab a{color:cadetblue}
+    </style>
+</head>
+<body oncontextmenu='return false' ondragstart='return false' style="background-color:#22C3AA">
+    <div id="wrapper">        
+        <div class="content tc">
+            <p class="logo"><img width="270" height="129" src="img/logo_white.png" alt="logo" /></p>
+            <div class="searchBox">
+                <form action="">
+                    <input type="text" class="searchIpt f14" name="wd" maxlength="100" />
+                    <input type="button" class="btn cp searchBTN" for="google" id="btnSearchG" value="谷歌一下" />
+                    <input type="button" class="btn cp searchBTN" for="baidu" id="btnSearchB" value="百度一下" />
+                </form>
+            </div>
+            <div class="mainContents oh">
+                <div class="ctnerWrapper" style="margin-left:0px">
+                    <div class="ctnerBox">
+                        <div id="cbox-1" class="cbox tl dn" style="width:100%">
+                            <div class="ctnerTab pr tc">
+                                <a href="#" class="on">常用类</a>
+                                <a href="#">工作类</a>
+                                <a href="#">开发类</a>
+                                <a href="#">工具类</a>
+                                <a href="#">娱乐类</a>
+                            </div>
+                            <div class="Navs rtNavs dn pt15 db">
+                                <div class="navTitle fl">常用类导航</div>
+                                <div class="navArea oh nav_common">
+                                </div>
+                            </div>
+                            <div class="Navs rtNavs dn pt15">
+                                <div class="navTitle fl">工作类导航</div>
+                                <div class="navArea oh nav_work">
+                                </div>
+                            </div>
+                            <div class="Navs rtNavs dn pt15">
+                                <div class="navTitle fl">开发类导航</div>
+                                <div class="navArea oh nav_dev">
+                                </div>
+                            </div>
+                            <div class="Navs rtNavs dn pt15">
+                                <div class="navTitle fl">工具类导航</div>
+                                <div class="navArea oh nav_tool">
+                                </div>
+                            </div>
+                            <div class="Navs rtNavs dn pt15">
+                                <div class="navTitle fl">娱乐类导航</div>
+                                <div class="navArea oh nav_fun">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" class="footer">©2016 selonsy 使用产品前必读 蜀ICP备16003894号-1</footer>
+    <script src="../lib/jquery.js"></script>    
+    <script src="js/searchcenter.js"></script>
+    <script src="../lib/common.js"></script>
+</body>
+</html>
+
