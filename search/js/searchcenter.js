@@ -112,6 +112,7 @@ function bindDom() {
         var key = $('.searchIpt').val();
         //ToDo:验证输入是否合法
         if (!key) { return; }
+				key = escape(key);
         if ($(this).attr('for') == "baidu") {
             window.open('http://www.baidu.com/s?wd=' + key);
         }
