@@ -107,18 +107,47 @@ function setweather() {
 
 function bindDom() {
 
+    var MyUrlEncode = function(str){
+
+        if(!str)return "";
+
+        str = str.replace('%','%25').
+        replace(' ','%20').
+        replace('"','%22').
+        replace('#','%23').        
+        replace('&','%26').
+        replace('(','%28').
+        replace(')','%29').
+        replace('+','%2B').
+        replace(',','%2C').
+        replace('/','%2F').
+        replace(':','%3A').
+        replace(';','%3B').
+        replace('<','%3C').
+        replace('=','%3D').
+        replace('>','%3E').
+        replace('?','%3F').
+        replace('@','%40').
+        replace('\\','%5C').
+        replace('|','%7C');
+
+        return str;
+    }
+
     //点击按钮
     $('.searchBTN').click(function () {
-        var key = $('.searchIpt').val();
-        //ToDo:验证输入是否合法
+        var key = $('.searchIpt').val();        
         if (!key) { return; }
-				key = escape(key);
+        //key = escape(key);
+        key = MyUrlEncode(key);
+        var url;
         if ($(this).attr('for') == "baidu") {
-            window.open('http://www.baidu.com/s?wd=' + key);
+            url = 'https://www.baidu.com/s?wd=' + key;                       
         }
-        else {
-            window.open('https://www.google.com.hk/#newwindow=1&q=' + key);
-        }
+        else{
+            url = 'https://www.google.com.hk/#newwindow=1&q=' + key;            
+        }                
+        window.open(url);        
     });
 
     //回车事件
