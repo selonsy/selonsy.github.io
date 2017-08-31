@@ -10,29 +10,28 @@
     <div id="music-panel">
         <a id="music-control" href="javascript:;" target="_blank"></a>
         <div id="music-content">
-            <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=453269037&auto=0&height=430"></iframe>
+            <!-- <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="http://music.163.com/outchain/player?type=0&id=453269037&auto=0&height=430"></iframe> -->
         </div>
     </div>
-    <div id="wrapper">        
+    <div id="wrapper" style="height:100%">        
         <div class="skinBg" style="background-image: url('img/65.jpg');"></div>
         <header id="header">
             <div class="weather fl">
                 <span class="cityW">
                     <span id="p_location"></span>
-                    <span>
-			<img id="img_weather" src="" class="img_weather">
-			<!-- <span class="weatherIcon"></span>-->
-                        <span id="p_temperature"></span>
-                    </span>
+                <span>
+			    <img id="img_weather" src="" class="img_weather">
+                <span id="p_temperature"></span>
+                </span>
                 </span>
                 <span class="sp">|</span>
                 <span class="pollution">
-		  <span>PM2.5：</span><span id="p_pm25"></span>
-		  <!--<span class="polutionLevel">良</span>-->
+                <span>PM2.5：</span>
+                <span id="p_pm25"></span>
                 </span>
-               <!-- <div class="cityWeather">
-
-	       </div>-->
+            </div>
+            <div style="float:right">
+                <a href="index_light.html" style="text-decoration:none;">进入新版</a>
             </div>
         </header>
         <div class="content tc">
@@ -161,8 +160,8 @@
                 </div>
             </div>
         </div>
-    </div>
-    <footer id="footer" class="footer">©2016 selonsy 使用产品前必读 蜀ICP备16003894号-1</footer>
+        <footer id="footer" class="footer">©2016 selonsy 蜀ICP备16003894号-1</footer>
+    </div>    
     <script src="../lib/jquery.js"></script>    
     <script src="js/searchcenter.js"></script>
     <script src="../lib/common.js"></script>
