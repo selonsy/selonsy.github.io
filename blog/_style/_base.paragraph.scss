@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    #PARAGRAPH
+\*------------------------------------*/
+
+p {
+  font-family: $ft-fm-def;
+  font-size: $ft-sz-def;
+  line-height: 1.8em;
+  margin: 1em 0;
+  color: $clr-def-darker;
+}
+
+.cn p {
+  text-indent: 2em;
+
+  &.no-indent {
+    text-indent: 0;
+  }
+}
+
+
+
+.split {
+  margin: 20px 0;
+  height: 10px;
+}
+
+
+
+.demo {
+  width: 100%;
+  height: 360px;
+}
