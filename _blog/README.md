@@ -1,4 +1,4 @@
-# Blog of Wenli Zhang
+# Blog of Devin Shen
 
 Blog: http://shenjl.github.io/blog.
 
