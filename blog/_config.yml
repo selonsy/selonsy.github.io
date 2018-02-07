@@ -1,9 +1,9 @@
 name: "Blog of Devin Shen"
 description: "Web Back-End Blog by Devin Shen"
 
-url: "http://shenjl.github.io/_blog"
-loadingImg: "http://shenjl.github.io/_blog/img/loading.gif"
-filePath: "http://shenjl.github.io/_blog/img/"
+url: "http://shenjl.github.io/blog"
+loadingImg: "http://shenjl.github.io/blog/img/loading.gif"
+filePath: "http://shenjl.github.io/blog/img/"
 
 timezone: Asia/Shanghai
 
